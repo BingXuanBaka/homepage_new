@@ -1,9 +1,11 @@
+import { Header } from "./sections/Header"
+
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <div class="p-12 pt-0 max-sm:m-8 mx-auto max-w-7xl flex flex-col gap-12">
+        <Header />
+      </div>
     </>
   )
 }
