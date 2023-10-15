@@ -1,4 +1,5 @@
 import { JSXElement } from "solid-js"
+import mainContents from "../mainContents"
 
 const socialMedias: { title: string, href: string, icon: JSXElement }[] = [
   {
@@ -25,7 +26,11 @@ function TopBar() {
       </div>
 
       <div class="mx-0.5">
-        <TopBarLink href="#about">about</TopBarLink>
+        {mainContents.map(element => (
+          <TopBarLink href={`#${element.slug}`}>
+            {element.title}
+          </TopBarLink>
+        ))}
       </div>
     </div>
   )
