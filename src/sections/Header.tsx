@@ -12,10 +12,10 @@ function Header() {
         <span class="text-secondary-text">{description.join(" · ")}</span>
       </div>
 
-      <div class="relative">
-        <img src="/avatar.png" alt="BingXuan's avatar" class="w-40 max-sm:w-36 rounded-full" />
+      <div class="relative w-40 max-sm:m-auto max-sm:w-[60vw]">
+        <img src="/avatar.png" alt="BingXuan's avatar" class="w-full rounded-full" />
         <img src="/avatar.png" aria-hidden="true"
-          class="w-40 rounded-full absolute top-0 left-0 blur-2xl opacity-20" />
+          class="w-full rounded-full absolute top-0 left-0 blur-2xl opacity-20" />
       </div>
     </div>
   )
