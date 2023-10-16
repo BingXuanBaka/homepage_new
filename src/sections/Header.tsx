@@ -11,7 +11,11 @@ function Header() {
         <span class="text-secondary-text">{description.join(" · ")}</span>
       </div>
 
-      <img src="/avatar.png" class="w-40 rounded-full" />
+      <div class="relative">
+        <img src="/avatar.png" alt="BingXuan's avatar" class="w-40 rounded-full" />
+        <img src="/avatar.png" aria-hidden="true"
+          class="w-40 rounded-full absolute top-0 left-0 blur-2xl opacity-20" />
+      </div>
     </div>
   )
 }
