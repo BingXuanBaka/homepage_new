@@ -63,7 +63,7 @@ const friends: {
     {
       title: "FurLibrary",
       href: "https://www.furrybbs.net/",
-      description: "(此站已死，留作纪念)",
+      description: "(此站已关，留作纪念)",
     },
   ]
 
