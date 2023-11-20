@@ -31,40 +31,6 @@ const friends: {
       avatar: "https://cravatar.cn/avatar/59b2fbdd507a84fe181b0af3e4ad7be3",
       description: "稻花香里说丰年，听取WA声一片",
     },
-    {
-      title: "凯莫·琼小羽",
-      href: "https://k.catkai.net/",
-      avatar: "https://s2.loli.net/2022/05/20/UiM9JeSusCDR4Fd.jpg",
-      description: "",
-    },
-    {
-      title: "某猫的个人Blog",
-      href: "https://blog.moumao.top/",
-      description: "",
-    },
-    {
-      title: "迷失的小K",
-      href: "http://www.kclub.fun/",
-      avatar: "https://cdn.kclub.fun/wp-content/uploads/2022/08/1660213171-colorful.jpg",
-      description: "Just for fun",
-    },
-    {
-      title: "歪皮",
-      href: "https://www.gene-yp.com/",
-      avatar: "https://pic.gene-yp.com/i/2022/07/25/c2axpo.jpeg",
-      description: "Just love, understanding and positivity",
-    },
-    {
-      title: "Foxhole",
-      href: "https://blog.southfox.me/",
-      avatar: "https://blog.southfox.me/favicon.png",
-      description: "",
-    },
-    {
-      title: "FurLibrary",
-      href: "https://www.furrybbs.net/",
-      description: "(此站已关，留作纪念)",
-    },
   ]
 
 const mainContents: {
