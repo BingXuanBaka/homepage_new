@@ -31,6 +31,12 @@ const friends: {
       avatar: "https://cravatar.cn/avatar/59b2fbdd507a84fe181b0af3e4ad7be3",
       description: "稻花香里说丰年，听取WA声一片",
     },
+    {
+      title: "天洛",
+      href: "https://foxluo.com/",
+      avatar: "https://foxluo.com/upload/头像.PNG/",
+      description: ""
+    }
   ]
 
 const mainContents: {
