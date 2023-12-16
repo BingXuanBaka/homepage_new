@@ -5,9 +5,9 @@ function Header() {
     <div class="h-[calc(100vh-6rem)] gap-10 flex items-center justify-between 
       max-sm:items-start max-sm:flex-col-reverse max-sm:justify-center">
       <div>
-        <h1 class="text-6xl text-primary-text leading-snug">
+        <h1 class="font-normal text-primary-text leading-snug">
           好的<br />这里是
-          <span class="font-semibold text-main">冰轩</span>
+          <span class="font-medium text-main">冰轩</span>
         </h1>
         <span class="text-secondary-text">{description.join(" · ")}</span>
       </div>
