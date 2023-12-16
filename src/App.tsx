@@ -1,5 +1,3 @@
-import "@fortawesome/fontawesome-free/css/all.css"
-
 import { TopBar } from "./components/TopBar"
 import { Header } from "./sections/Header"
 import { MainContent } from "./sections/MainContent"

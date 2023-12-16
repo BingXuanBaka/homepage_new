@@ -1,16 +1,19 @@
 import { JSXElement } from "solid-js"
 import mainContents from "../mainContents"
 
+import FaTwitter from '@fortawesome/fontawesome-free/svgs/brands/twitter.svg'
+import FaGithub from '@fortawesome/fontawesome-free/svgs/brands/github.svg'
+
 const socialMedias: { title: string, href: string, icon: JSXElement }[] = [
   {
     title: "BingXuanBaka@Twitter",
     href: "https://twitter.com/BingXuanBaka",
-    icon: <i class="fa-brands fa-twitter text-lg"></i>
+    icon: <FaTwitter></FaTwitter>
   },
   {
     title: "BingXuanBaka@Github",
     href: "https://github.com/BingXuanBaka",
-    icon: <i class="fa-brands fa-github text-lg"></i>
+    icon: <FaGithub></FaGithub>
   }
 ]
 
@@ -56,9 +59,9 @@ function SocialMediaLink(props: {
   href: string
 }) {
   return (
-    <a class="box-content p-2 my-1 mx-0.5 h-6 w-6 leading-6 inline-block 
-      align-middle hover:bg-container
-      rounded text-primary-text text-center"
+    <a class="box-content p-2 my-1 mx-0.5 h-6 w-6 leading-6
+      align-middle hover:bg-container text-primary-text fill-primary-text
+      rounded [&>svg]:h-[18px] inline-flex flex-row items-center justify-center"
       title={props.title}
       href={props.href}>
       {props.children}
