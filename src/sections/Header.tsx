@@ -7,7 +7,7 @@ function Header() {
       <div>
         <h1 class="text-6xl text-primary-text leading-snug">
           好的<br />这里是
-          <span class="font-bold text-main">冰轩</span>
+          <span class="font-semibold text-main">冰轩</span>
         </h1>
         <span class="text-secondary-text">{description.join(" · ")}</span>
       </div>
