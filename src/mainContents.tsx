@@ -1,6 +1,8 @@
 import { JSXElement } from "solid-js"
 import { Card } from "./components/Card"
 import { ProgressBar } from "./components/ProgressBar"
+import { Avatar } from "./components/Avatar"
+import { CardGrid } from "./components/CardGrid"
 
 const skills: { name: string, value: number }[] = [
   {
@@ -78,27 +80,17 @@ const mainContents: {
       title: "友链",
       slug: "friends",
       content: <>
-        <div class="w-full gap-6 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          {friends.map(element =>
-            <a href={element.href}>
-              <Card
-                title={element.title}
-                description={element.description}
-                leading={
-                  element.avatar == null ?
-                    <i class="w-10 h-10 rounded-full bg-neutral-600 shrink-0
-                      text-center leading-10 not-italic" aria-hidden="true">
-                      {element.title.charAt(0)}
-                    </i> :
-                    <img class="w-10 h-10 rounded-full text-center leading-10 
-                      bg-neutral-600 shrink-0" alt={element.title.charAt(0)}
-                      loading="lazy" src={element.avatar} aria-hidden="true"/>
-                }
-              />
-            </a>
-          )}
-        </div>
-
+        <CardGrid children={friends.map(element =>
+          <a href={element.href}>
+            <Card
+              title={element.title}
+              description={element.description}
+              leading={
+                <Avatar src={element.avatar} fallbackChar={element.title.charAt(0)} />
+              }
+            />
+          </a>
+        )}/>
       </>
     }
   ]
