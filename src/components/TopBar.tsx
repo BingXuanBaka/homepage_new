@@ -19,7 +19,7 @@ const socialMedias: { title: string, href: string, icon: JSXElement }[] = [
 
 function TopBar() {
   return (
-    <div class="h-12 flex flex-row justify-between">
+    <div class="h-12 flex flex-row justify-between z-50 sticky">
       <div class="mx-0.5">
         {socialMedias.map(element => (
           <SocialMediaLink title={element.title} href={element.href}>
