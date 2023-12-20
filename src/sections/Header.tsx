@@ -18,7 +18,7 @@ function Header() {
   const newYearTime = moment("2024-01-01T00:00");
 
   const updateRemainTimeDuration = () => {
-    setRemainTime(moment.duration(newYearTime.diff(moment())));
+    setRemainTime(moment.duration(newYearTime.diff(moment())).add(1,"second"));
     setIsNewYear(moment().isAfter(newYearTime));
   };
 
@@ -55,15 +55,11 @@ function Header() {
         </h1>
         <span class="text-secondary-text">
           { !isNewYear() ?
-          "距离跨年还剩 " +
-          remainTime()?.days() +
-            " 天 " +
-            remainTime()?.hours() +
-            " 小时 " +
-            remainTime()?.minutes() +
-            " 分 " +
-            remainTime()?.seconds() +
-            " 秒"
+            "距离跨年还剩 " +
+            (((remainTime()?.days() ?? 0) > 0) ? `${remainTime()?.days()} 天 ` : "")+
+            (((remainTime()?.hours() ?? 0) > 0) ? `${remainTime()?.hours()} 小时 ` : "")+
+            (((remainTime()?.minutes() ?? 0) > 0) ? `${remainTime()?.minutes()} 分 ` : "")+
+            `${remainTime()?.seconds()} 秒`
             :
             "新年快乐"
           }
