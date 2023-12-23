@@ -55,7 +55,7 @@ function Header() {
         </h1>
         <span class="text-secondary-text">
           { !isNewYear() ?
-            "距离跨年还剩 " +
+            "距离新年还剩 " +
             (((remainTime()?.days() ?? 0) > 0) ? `${remainTime()?.days()} 天 ` : "")+
             (((remainTime()?.hours() ?? 0) > 0) ? `${remainTime()?.hours()} 小时 ` : "")+
             (((remainTime()?.minutes() ?? 0) > 0) ? `${remainTime()?.minutes()} 分 ` : "")+
