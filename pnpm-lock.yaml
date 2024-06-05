@@ -6,34 +6,34 @@ settings:
 
 dependencies:
   '@fortawesome/fontawesome-free':
-    specifier: ^6.4.2
+    specifier: ^6.5.2
     version: 6.5.2
   solid-js:
-    specifier: ^1.7.8
+    specifier: ^1.8.17
     version: 1.8.17
 
 devDependencies:
   autoprefixer:
-    specifier: ^10.4.16
+    specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.38)
   postcss:
-    specifier: ^8.4.31
+    specifier: ^8.4.38
     version: 8.4.38
   tailwindcss:
-    specifier: ^3.3.3
+    specifier: ^3.4.3
     version: 3.4.3
   typescript:
-    specifier: ^5.0.2
+    specifier: ^5.4.5
     version: 5.4.5
   vite:
-    specifier: ^5.0.5
+    specifier: ^5.2.12
     version: 5.2.12
   vite-plugin-solid:
-    specifier: ^2.7.0
+    specifier: ^2.10.2
     version: 2.10.2(solid-js@1.8.17)(vite@5.2.12)
   vite-plugin-solid-svg:
-    specifier: ^0.7.0
-    version: 0.7.0(solid-js@1.8.17)(vite@5.2.12)
+    specifier: ^0.8.1
+    version: 0.8.1(solid-js@1.8.17)(vite@5.2.12)
 
 packages:
 
@@ -1742,11 +1742,11 @@ packages:
     resolution: {integrity: sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==}
     dev: true
 
-  /vite-plugin-solid-svg@0.7.0(solid-js@1.8.17)(vite@5.2.12):
-    resolution: {integrity: sha512-skErWSlCdI/NbrnyFQJWQk8RWjtRQGfknm1FjIgW190osiyVIZLWnQyT2ErV92ru9p5FjFgA4L482Y7ZBPcRzA==}
+  /vite-plugin-solid-svg@0.8.1(solid-js@1.8.17)(vite@5.2.12):
+    resolution: {integrity: sha512-ROGC2ae1eYUCMd+zfJtsbUtuZwsb6DZS0+Sy5/ZXDokOunGi0Ez/cL7OPdsixN3I0/rNYd/3hilo3kpRMAS+IA==}
     peerDependencies:
       solid-js: ^1
-      vite: ^4
+      vite: '>=4'
     dependencies:
       solid-js: 1.8.17
       svgo: 3.3.2
